@@ -1,0 +1,22 @@
+{
+  "name": "cleanup-workflow-action",
+  "version": "1.0.0",
+  "description": "Action to cleanup workflows by status.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --platform=node --outfile=dist/index.js"
+  },
+  "keywords": [],
+  "author": "Yann AMSELLEM <10496045+yannamsellem@users.noreply.github.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "esbuild": "^0.14.25",
+    "source-map-support": "^0.5.21",
+    "typescript": "^4.6.2"
+  }
+}

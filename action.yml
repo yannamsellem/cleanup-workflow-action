@@ -1,0 +1,16 @@
+name: 'Cleanup-workflows'
+author: 'Yann AMSELLEM'
+description: 'Cleanup workflows'
+inputs:
+  repository:
+    description: 'Repository name with owner. For example, yannamsellem/cleanup-actions.'
+    default: ${{ github.repository }}
+  token:
+    description: 'Personal access token (PAT) used to fetch and removes the failed workflows.'
+    default: ${{ github.token }}
+  status:
+    description: 'Status of the workflows to delete.'
+    default: 'failure'
+runs:
+  using: node16
+  main: dist/index.js
